@@ -52,7 +52,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5                 &kp N6                    &kp N7    &kp N8    &kp N9     &kp N0         &kp BSPC
+&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5                 &kp N6                    &kp N7    &kp N8    &kp N9     &kp N0         &kp DELETE
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4           &kp LEFT                  &kp DOWN  &kp UP    &kp RIGHT  &kp PAGE_UP    &trans
 &kp LSHFT   &trans        &trans        &trans        &trans        &kp PRINTSCREEN        &trans                    &trans    &trans    &trans     &kp PAGE_DOWN  &kp RIGHT_SHIFT
                                         &kp LGUI      &trans        &bht LEFT_ALT SPACE    &bht RIGHT_CONTROL ENTER  &trans    &kp RALT
