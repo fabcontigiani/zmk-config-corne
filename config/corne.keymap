@@ -10,17 +10,6 @@
 
 / {
     behaviors {
-        bht: bht {
-            compatible = "zmk,behavior-hold-tap";
-            label = "BHT";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "balanced";
-            quick-tap-ms = <150>;
-        };
-
         hrml: home-row-mod-left {
             compatible = "zmk,behavior-hold-tap";
             label = "home-row-mod-left";
@@ -63,10 +52,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none       &kp Q             &kp W             &kp E                 &kp R               &kp T        &kp Y      &kp U                &kp I                  &kp O              &kp P                 &none
-&kp ESCAPE  &hrml LEFT_GUI A  &hrml LEFT_ALT S  &hrml LEFT_CONTROL D  &hrml LEFT_SHIFT F  &kp G        &kp H      &hrmr RIGHT_SHIFT J  &hrmr RIGHT_CONTROL K  &hrmr RIGHT_ALT L  &hrmr RIGHT_GUI SEMI  &kp SQT
-&none       &kp Z             &kp X             &kp C                 &kp V               &kp B        &kp N      &kp M                &kp COMMA              &kp DOT            &kp FSLH              &none
-                                                &kp TAB               &mo 2               &kp SPACE    &kp ENTER  &mo 1                &kp BACKSPACE
+&none  &kp Q             &kp W             &kp E                 &kp R               &kp T        &kp Y      &kp U                &kp I                  &kp O              &kp P                 &none
+&none  &hrml LEFT_GUI A  &hrml LEFT_ALT S  &hrml LEFT_CONTROL D  &hrml LEFT_SHIFT F  &kp G        &kp H      &hrmr RIGHT_SHIFT J  &hrmr RIGHT_CONTROL K  &hrmr RIGHT_ALT L  &hrmr RIGHT_GUI SEMI  &none
+&none  &kp Z             &kp X             &kp C                 &kp V               &kp B        &kp N      &kp M                &kp COMMA              &kp DOT            &kp FSLH              &none
+                                           &kp ESCAPE            &lt 2 TAB           &kp SPACE    &kp ENTER  &mo 1                &kp BACKSPACE
             >;
         };
 
@@ -80,10 +69,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans      &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7                  &kp N8                  &kp N9                 &kp N0                       &kp DELETE
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &hrmr RIGHT_SHIFT DOWN  &hrmr RIGHT_CONTROL UP  &hrmr RIGHT_ALT RIGHT  &hrmr RIGHT_GUI PRINTSCREEN  &trans
-&trans      &kp C_VOL_DN  &kp C_PREV    &kp C_PP      &kp C_NEXT    &kp C_VOL_UP    &kp HOME  &kp PAGE_DOWN           &kp PAGE_DOWN           &kp END                &kp INSERT                   &trans
-                                        &trans        &mo 3         &trans          &trans    &trans                  &kp DELETE
+&trans  &kp N1                   &kp N2                 &kp N3                   &kp N4                   &kp N5             &kp N6    &kp N7                  &kp N8                  &kp N9                 &kp N0                       &trans
+&trans  &hrml LEFT_GUI C_VOL_DN  &hrml LEFT_ALT C_PREV  &hrml LEFT_CONTROL C_PP  &hrml LEFT_SHIFT C_NEXT  &kp C_VOLUME_UP    &kp LEFT  &hrmr RIGHT_SHIFT DOWN  &hrmr RIGHT_CONTROL UP  &hrmr RIGHT_ALT RIGHT  &hrmr RIGHT_GUI PRINTSCREEN  &trans
+&trans  &bt BT_CLR               &bt BT_SEL 0           &bt BT_SEL 1             &bt BT_SEL 2             &bt BT_SEL 3       &kp HOME  &kp PAGE_DOWN           &kp PAGE_DOWN           &kp END                &kp INSERT                   &trans
+                                                        &trans                   &mo 3                    &trans             &trans    &trans                  &kp DELETE
             >;
         };
 
@@ -97,10 +86,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL   &kp AT          &kp HASH          &kp DLLR              &kp PRCNT    &kp CARET  &kp AMPS               &kp ASTRK          &kp LPAR         &kp RPAR       &trans
-&trans  &kp UNDER  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp PLUS     &kp EQUAL  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp MINUS      &trans
-&trans  &kp GRAVE  &kp TILDE       &trans            &trans                &trans       &trans     &trans                 &trans             &kp PIPE         &kp BACKSLASH  &trans
-                                   &trans            &trans                &trans       &trans     &mo 3                  &trans
+&trans  &kp EXCL              &kp AT                     &kp HASH                         &kp DLLR                           &kp PRCNT    &kp CARET  &kp AMPS                             &kp ASTRK                          &kp LPAR                     &kp RPAR                      &trans
+&trans  &hrml LEFT_GUI GRAVE  &hrml LEFT_ALT LEFT_BRACE  &hrml LEFT_CONTROL LEFT_BRACKET  &hrml LEFT_SHIFT LEFT_PARENTHESIS  &trans       &trans     &hrmr RIGHT_SHIFT RIGHT_PARENTHESIS  &hrmr RIGHT_CONTROL RIGHT_BRACKET  &hrmr RIGHT_ALT RIGHT_BRACE  &hrmr RIGHT_GUI SINGLE_QUOTE  &trans
+&trans  &kp TILDE             &kp PIPE                   &kp PLUS                         &kp UNDER                          &trans       &trans     &kp MINUS                            &kp EQUAL                          &kp BACKSLASH                &kp DOUBLE_QUOTES             &trans
+                                                         &trans                           &trans                             &trans       &trans     &mo 3                                &trans
             >;
         };
 
