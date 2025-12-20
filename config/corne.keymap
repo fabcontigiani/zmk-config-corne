@@ -69,10 +69,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1                   &kp N2                 &kp N3                   &kp N4                   &kp N5             &kp N6      &kp N7                  &kp N8                  &kp N9                 &kp N0                       &trans
-&trans  &hrml LEFT_GUI C_VOL_DN  &hrml LEFT_ALT C_PREV  &hrml LEFT_CONTROL C_PP  &hrml LEFT_SHIFT C_NEXT  &kp C_VOLUME_UP    &kp LEFT    &hrmr RIGHT_SHIFT DOWN  &hrmr RIGHT_CONTROL UP  &hrmr RIGHT_ALT RIGHT  &hrmr RIGHT_GUI PRINTSCREEN  &trans
-&trans  &bt BT_CLR               &bt BT_SEL 0           &bt BT_SEL 1             &bt BT_SEL 2             &bt BT_SEL 3       &kp HOME    &kp PAGE_DOWN           &kp PAGE_DOWN           &kp END                &kp INSERT                   &trans
-                                                        &trans                   &mo 3                    &trans             &kp DELETE  &trans                  &trans
+&trans  &kp N1                   &kp N2                 &kp N3                   &kp N4                   &kp N5             &kp N6    &kp N7                  &kp N8                  &kp N9                 &kp N0                       &trans
+&trans  &hrml LEFT_GUI C_VOL_DN  &hrml LEFT_ALT C_PREV  &hrml LEFT_CONTROL C_PP  &hrml LEFT_SHIFT C_NEXT  &kp C_VOLUME_UP    &kp LEFT  &hrmr RIGHT_SHIFT DOWN  &hrmr RIGHT_CONTROL UP  &hrmr RIGHT_ALT RIGHT  &hrmr RIGHT_GUI PRINTSCREEN  &trans
+&trans  &bt BT_CLR               &bt BT_SEL 0           &bt BT_SEL 1             &bt BT_SEL 2             &bt BT_SEL 3       &kp HOME  &kp PAGE_DOWN           &kp PAGE_DOWN           &kp END                &kp INSERT                   &trans
+                                                        &trans                   &mo 3                    &trans             &trans    &trans                  &trans
             >;
         };
 
@@ -86,10 +86,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL              &kp AT                     &kp HASH                         &kp DLLR                           &kp PRCNT    &kp CARET  &kp AMPS                             &kp ASTRK                          &kp LPAR                     &kp RPAR                      &trans
-&trans  &hrml LEFT_GUI GRAVE  &hrml LEFT_ALT LEFT_BRACE  &hrml LEFT_CONTROL LEFT_BRACKET  &hrml LEFT_SHIFT LEFT_PARENTHESIS  &trans       &trans     &hrmr RIGHT_SHIFT RIGHT_PARENTHESIS  &hrmr RIGHT_CONTROL RIGHT_BRACKET  &hrmr RIGHT_ALT RIGHT_BRACE  &hrmr RIGHT_GUI SINGLE_QUOTE  &trans
-&trans  &kp TILDE             &kp PIPE                   &kp PLUS                         &kp UNDER                          &trans       &trans     &kp MINUS                            &kp EQUAL                          &kp BACKSLASH                &kp DOUBLE_QUOTES             &trans
-                                                         &trans                           &trans                             &trans       &trans     &mo 3                                &trans
+&trans  &kp EXCL              &kp AT                     &kp HASH                         &kp DLLR                           &kp PRCNT    &kp CARET   &kp AMPS                             &kp ASTRK                          &kp LPAR                     &kp RPAR                      &trans
+&trans  &hrml LEFT_GUI GRAVE  &hrml LEFT_ALT LEFT_BRACE  &hrml LEFT_CONTROL LEFT_BRACKET  &hrml LEFT_SHIFT LEFT_PARENTHESIS  &trans       &trans      &hrmr RIGHT_SHIFT RIGHT_PARENTHESIS  &hrmr RIGHT_CONTROL RIGHT_BRACKET  &hrmr RIGHT_ALT RIGHT_BRACE  &hrmr RIGHT_GUI SINGLE_QUOTE  &trans
+&trans  &kp TILDE             &kp PIPE                   &kp PLUS                         &kp UNDER                          &trans       &trans      &kp MINUS                            &kp EQUAL                          &kp BACKSLASH                &kp DOUBLE_QUOTES             &trans
+                                                         &trans                           &trans                             &trans       &kp DELETE  &mo 3                                &trans
             >;
         };
 
