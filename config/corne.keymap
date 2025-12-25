@@ -16,7 +16,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
@@ -30,7 +30,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
@@ -71,7 +71,7 @@
             bindings = <
 &trans  &kp N1                   &kp N2                 &kp N3                   &kp N4                   &kp N5             &kp N6    &kp N7                  &kp N8                  &kp N9                 &kp N0                       &trans
 &trans  &hrml LEFT_GUI C_VOL_DN  &hrml LEFT_ALT C_PREV  &hrml LEFT_CONTROL C_PP  &hrml LEFT_SHIFT C_NEXT  &kp C_VOLUME_UP    &kp LEFT  &hrmr RIGHT_SHIFT DOWN  &hrmr RIGHT_CONTROL UP  &hrmr RIGHT_ALT RIGHT  &hrmr RIGHT_GUI PRINTSCREEN  &trans
-&trans  &bt BT_CLR               &bt BT_SEL 0           &bt BT_SEL 1             &bt BT_SEL 2             &bt BT_SEL 3       &kp HOME  &kp PAGE_DOWN           &kp PAGE_DOWN           &kp END                &kp INSERT                   &trans
+&trans  &bt BT_CLR               &bt BT_SEL 0           &bt BT_SEL 1             &bt BT_SEL 2             &bt BT_SEL 3       &kp HOME  &kp PAGE_DOWN           &kp PAGE_UP             &kp END                &kp INSERT                   &trans
                                                         &trans                   &mo 3                    &trans             &trans    &trans                  &trans
             >;
         };
