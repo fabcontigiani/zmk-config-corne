@@ -5,7 +5,7 @@ This is my personal [ZMK](https://zmk.dev/) configuration for the [Corne](https:
 ## Hardware
 
 - **Keyboard:** Corne V3 (split 3x6 + 3 thumb keys)
-- **Controller:** nice!nano v2
+- **Controller:** SuperMini nRF52840
 
 ## Keymap
 
