@@ -39,6 +39,16 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        esc-combo {
+            bindings = <&kp ESCAPE>;
+            key-positions = <38 39>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -55,7 +65,7 @@
 &none  &kp Q             &kp W             &kp E                 &kp R               &kp T        &kp Y          &kp U                &kp I                  &kp O              &kp P                 &none
 &none  &hrml LEFT_GUI A  &hrml LEFT_ALT S  &hrml LEFT_CONTROL D  &hrml LEFT_SHIFT F  &kp G        &kp H          &hrmr RIGHT_SHIFT J  &hrmr RIGHT_CONTROL K  &hrmr RIGHT_ALT L  &hrmr RIGHT_GUI SEMI  &none
 &none  &kp Z             &kp X             &kp C                 &kp V               &kp B        &kp N          &kp M                &kp COMMA              &kp DOT            &kp FSLH              &none
-                                           &kp ESCAPE            &lt 2 TAB           &kp SPACE    &kp BACKSPACE  &lt 1 ENTER          &kp K_CMENU
+                                           &none                 &lt 2 TAB           &kp SPACE    &kp BACKSPACE  &lt 1 ENTER          &kp K_CMENU
             >;
         };
 
@@ -99,6 +109,15 @@
 &trans  &kp F11  &kp F12  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans
 &trans  &trans   &trans   &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans
                           &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
