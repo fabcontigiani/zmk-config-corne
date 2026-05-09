@@ -103,21 +103,21 @@
             >;
         };
 
-        layer_3 {
+        function_layer {
             bindings = <
 &trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans
-&trans  &kp F11  &kp F12  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &kp F11  &kp F12  &trans  &trans  &tog 4    &trans  &trans  &trans  &trans  &trans   &trans
 &trans  &trans   &trans   &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans
                           &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
-        layer_4 {
+        gaming_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&kp TAB    &kp Q  &kp W  &kp E         &kp R             &kp T        &kp Y          &kp U              &kp I          &kp O    &kp P     &kp BSPC
+&kp ESC    &kp A  &kp S  &kp D         &kp F             &kp G        &kp H          &kp J              &kp K          &kp L    &kp SEMI  &kp ENTER
+&kp LSHFT  &kp Z  &kp X  &kp C         &kp V             &kp B        &kp N          &kp M              &kp COMMA      &kp DOT  &kp FSLH  &kp RSHFT
+                         &kp LEFT_ALT  &kp LEFT_CONTROL  &kp SPACE    &kp RIGHT_GUI  &kp RIGHT_CONTROL  &kp RIGHT_ALT
             >;
         };
     };
