@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   Default Layer:
-  - ''
+  - ESCAPE
   - Q
   - W
   - E
