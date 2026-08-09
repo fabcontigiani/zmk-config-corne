@@ -57,16 +57,16 @@ layers:
   - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: VOL DN, h: LEFT GUI}
-  - {t: PREV, h: LEFT ALT}
-  - {t: PP, h: LEFT CONTROL}
-  - {t: NEXT, h: LEFT SHIFT}
-  - VOLUME UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - LEFT
   - {t: DOWN, h: RIGHT SHIFT}
   - {t: UP, h: RIGHT CONTROL}
   - {t: RIGHT, h: RIGHT ALT}
-  - {t: PRINTSCREEN, h: RIGHT GUI}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -78,10 +78,10 @@ layers:
   - PAGE DOWN
   - PAGE UP
   - END
-  - INSERT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - function
+  - {t: ▽, type: trans}
+  - Function Layer
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -127,9 +127,9 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - DELETE
-  - function
+  - Function Layer
   - {t: ▽, type: trans}
-  function:
+  Function Layer:
   - {t: ▽, type: trans}
   - F1
   - F2
@@ -143,24 +143,24 @@ layers:
   - F10
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - F11
-  - F12
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: F11, h: LGUI}
+  - {t: F12, h: LEFT ALT}
+  - {t: INSERT, h: LCTRL}
+  - {t: PRINTSCREEN, h: LSHFT}
   - BT CLR
+  - PREV
+  - {t: VOLUME DOWN, h: RIGHT SHIFT}
+  - {t: VOL UP, h: RIGHT CONTROL}
+  - {t: NEXT, h: RIGHT ALT}
+  - {t: PLAY PAUSE, h: RIGHT GUI}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
