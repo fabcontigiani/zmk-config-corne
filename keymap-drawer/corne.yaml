@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   Default Layer:
-  - ESCAPE
+  - ''
   - Q
   - W
   - E
@@ -37,7 +37,7 @@ layers:
   - .
   - /
   - ''
-  - ''
+  - ESCAPE
   - {t: TAB, h: Raise Layer}
   - SPACE
   - BACKSPACE
@@ -147,7 +147,7 @@ layers:
   - {t: F12, h: LEFT ALT}
   - {t: INSERT, h: LCTRL}
   - {t: PRINTSCREEN, h: LSHFT}
-  - BT CLR
+  - {t: ▽, type: trans}
   - PREV
   - {t: VOLUME DOWN, h: RIGHT SHIFT}
   - {t: VOL UP, h: RIGHT CONTROL}
@@ -164,15 +164,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
+  - BT CLR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-combos:
-- p: [38, 39]
-  k: ESCAPE
-  l: [Default Layer]
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
