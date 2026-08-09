@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   Default Layer:
-  - ''
+  - TAB
   - Q
   - W
   - E
@@ -12,8 +12,8 @@ layers:
   - I
   - O
   - P
-  - ''
-  - ''
+  - ENTER
+  - ESCAPE
   - {t: A, h: LEFT GUI}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LEFT CONTROL}
@@ -24,8 +24,8 @@ layers:
   - {t: K, h: RIGHT CONTROL}
   - {t: L, h: RIGHT ALT}
   - {t: ;, h: RIGHT GUI}
-  - ''
-  - ''
+  - ''''
+  - LSHIFT
   - Z
   - X
   - C
@@ -36,25 +36,25 @@ layers:
   - ','
   - .
   - /
-  - ''
-  - ESCAPE
-  - {t: TAB, h: Raise Layer}
+  - RSHIFT
+  - CAPSLOCK
+  - Raise Layer
   - SPACE
   - BACKSPACE
-  - {t: ENTER, h: Lower Layer}
+  - Lower Layer
   - CMENU
   Lower Layer:
   - {t: ▽, type: trans}
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -88,40 +88,40 @@ layers:
   - {t: ▽, type: trans}
   Raise Layer:
   - {t: ▽, type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: '`', h: LEFT GUI}
-  - {t: '{', h: LEFT ALT}
-  - {t: '[', h: LEFT CONTROL}
-  - {t: (, h: LEFT SHIFT}
+  - {t: '=', h: LEFT ALT}
+  - {t: '-', h: LEFT CONTROL}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ), h: RIGHT SHIFT}
-  - {t: ']', h: RIGHT CONTROL}
-  - {t: '}', h: RIGHT ALT}
-  - {t: '''', h: RIGHT GUI}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '~'
-  - '|'
-  - +
-  - _
+  - {t: \, h: RIGHT CONTROL}
+  - {t: '[', h: RIGHT ALT}
+  - {t: ']', h: RIGHT GUI}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '-'
-  - '='
-  - \
-  - '"'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -130,7 +130,7 @@ layers:
   - Function Layer
   - {t: ▽, type: trans}
   Function Layer:
-  - {t: ▽, type: trans}
+  - F12
   - F1
   - F2
   - F3
@@ -141,10 +141,10 @@ layers:
   - F8
   - F9
   - F10
+  - F11
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: F11, h: LGUI}
-  - {t: F12, h: LEFT ALT}
+  - {t: ▽, type: trans}
   - {t: INSERT, h: LCTRL}
   - {t: PRINTSCREEN, h: LSHFT}
   - {t: ▽, type: trans}
@@ -153,8 +153,8 @@ layers:
   - {t: VOL UP, h: RIGHT CONTROL}
   - {t: NEXT, h: RIGHT ALT}
   - {t: PLAY PAUSE, h: RIGHT GUI}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - MUTE
+  - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
@@ -164,7 +164,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - BT CLR
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
