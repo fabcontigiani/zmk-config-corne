@@ -79,10 +79,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1                   &kp N2                 &kp N3                   &kp N4                   &kp N5             &kp N6    &kp N7                  &kp N8                  &kp N9                 &kp N0                       &trans
-&trans  &hrml LEFT_GUI C_VOL_DN  &hrml LEFT_ALT C_PREV  &hrml LEFT_CONTROL C_PP  &hrml LEFT_SHIFT C_NEXT  &kp C_VOLUME_UP    &kp LEFT  &hrmr RIGHT_SHIFT DOWN  &hrmr RIGHT_CONTROL UP  &hrmr RIGHT_ALT RIGHT  &hrmr RIGHT_GUI PRINTSCREEN  &trans
-&trans  &trans                   &trans                 &trans                   &trans                   &trans             &kp HOME  &kp PAGE_DOWN           &kp PAGE_UP             &kp END                &kp INSERT                   &trans
-                                                        &trans                   &mo 3                    &trans             &trans    &trans                  &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7                  &kp N8                  &kp N9                 &kp N0  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &hrmr RIGHT_SHIFT DOWN  &hrmr RIGHT_CONTROL UP  &hrmr RIGHT_ALT RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PAGE_DOWN           &kp PAGE_UP             &kp END                &trans  &trans
+                        &trans  &mo 3   &trans    &trans    &trans                  &trans
             >;
         };
 
@@ -105,11 +105,13 @@
 
         function_layer {
             bindings = <
-&trans  &kp F1      &kp F2        &kp F3        &kp F4        &kp F5          &kp F6        &kp F7  &kp F8  &kp F9  &kp F10  &trans
-&trans  &kp F11     &kp F12       &trans        &trans        &trans          &trans        &trans  &trans  &trans  &trans   &trans
-&trans  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4  &trans  &trans  &trans  &trans   &trans
-                                  &trans        &trans        &trans          &trans        &trans  &trans
+&trans  &kp F1          &kp F2              &kp F3              &kp F4                   &kp F5          &kp F6      &kp F7                           &kp F8                        &kp F9                  &kp F10                       &trans
+&trans  &hrml LGUI F11  &hrml LEFT_ALT F12  &hrml LCTRL INSERT  &hrml LSHFT PRINTSCREEN  &bt BT_CLR      &kp K_PREV  &hrmr RIGHT_SHIFT C_VOLUME_DOWN  &hrmr RIGHT_CONTROL C_VOL_UP  &hrmr RIGHT_ALT C_NEXT  &hrmr RIGHT_GUI C_PLAY_PAUSE  &trans
+&trans  &bt BT_SEL 0    &bt BT_SEL 1        &bt BT_SEL 2        &bt BT_SEL 3             &bt BT_SEL 4    &trans      &trans                           &trans                        &trans                  &trans                        &trans
+                                            &trans              &trans                   &trans          &trans      &trans                           &trans
             >;
+
+            label = "Function Layer";
         };
     };
 };
