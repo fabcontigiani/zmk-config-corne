@@ -39,15 +39,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        esc-combo {
-            bindings = <&kp ESCAPE>;
-            key-positions = <38 39>;
-            layers = <0>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -62,10 +54,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE  &kp Q             &kp W             &kp E                 &kp R               &kp T        &kp Y          &kp U                &kp I                  &kp O              &kp P                 &none
-&none       &hrml LEFT_GUI A  &hrml LEFT_ALT S  &hrml LEFT_CONTROL D  &hrml LEFT_SHIFT F  &kp G        &kp H          &hrmr RIGHT_SHIFT J  &hrmr RIGHT_CONTROL K  &hrmr RIGHT_ALT L  &hrmr RIGHT_GUI SEMI  &none
-&none       &kp Z             &kp X             &kp C                 &kp V               &kp B        &kp N          &kp M                &kp COMMA              &kp DOT            &kp FSLH              &none
-                                                &none                 &lt 2 TAB           &kp SPACE    &kp BACKSPACE  &lt 1 ENTER          &kp K_CMENU
+&none  &kp Q             &kp W             &kp E                 &kp R               &kp T        &kp Y          &kp U                &kp I                  &kp O              &kp P                 &none
+&none  &hrml LEFT_GUI A  &hrml LEFT_ALT S  &hrml LEFT_CONTROL D  &hrml LEFT_SHIFT F  &kp G        &kp H          &hrmr RIGHT_SHIFT J  &hrmr RIGHT_CONTROL K  &hrmr RIGHT_ALT L  &hrmr RIGHT_GUI SEMI  &none
+&none  &kp Z             &kp X             &kp C                 &kp V               &kp B        &kp N          &kp M                &kp COMMA              &kp DOT            &kp FSLH              &none
+                                           &kp ESCAPE            &lt 2 TAB           &kp SPACE    &kp BACKSPACE  &lt 1 ENTER          &kp K_CMENU
             >;
         };
 
@@ -106,8 +98,8 @@
         function_layer {
             bindings = <
 &trans  &kp F1          &kp F2              &kp F3              &kp F4                   &kp F5          &kp F6      &kp F7                           &kp F8                        &kp F9                  &kp F10                       &trans
-&trans  &hrml LGUI F11  &hrml LEFT_ALT F12  &hrml LCTRL INSERT  &hrml LSHFT PRINTSCREEN  &bt BT_CLR      &kp K_PREV  &hrmr RIGHT_SHIFT C_VOLUME_DOWN  &hrmr RIGHT_CONTROL C_VOL_UP  &hrmr RIGHT_ALT C_NEXT  &hrmr RIGHT_GUI C_PLAY_PAUSE  &trans
-&trans  &bt BT_SEL 0    &bt BT_SEL 1        &bt BT_SEL 2        &bt BT_SEL 3             &bt BT_SEL 4    &trans      &trans                           &trans                        &trans                  &trans                        &trans
+&trans  &hrml LGUI F11  &hrml LEFT_ALT F12  &hrml LCTRL INSERT  &hrml LSHFT PRINTSCREEN  &trans          &kp K_PREV  &hrmr RIGHT_SHIFT C_VOLUME_DOWN  &hrmr RIGHT_CONTROL C_VOL_UP  &hrmr RIGHT_ALT C_NEXT  &hrmr RIGHT_GUI C_PLAY_PAUSE  &trans
+&trans  &bt BT_SEL 0    &bt BT_SEL 1        &bt BT_SEL 2        &bt BT_SEL 3             &bt BT_SEL 4    &trans      &trans                           &trans                        &trans                  &bt BT_CLR                    &trans
                                             &trans              &trans                   &trans          &trans      &trans                           &trans
             >;
 
